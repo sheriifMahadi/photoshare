@@ -10,7 +10,8 @@
             Please try again.
             </p>
     {% else %}
-    If you don't have an account <a href="{% url "register" %}">register here</    {% endif %}
+    If you don't have an account <a href="{% url "register" %}">register here</a>
+    {% endif %}
     <div class="login-form">
         <form action="{% url 'login' %}" method="post">
             {{ form.as_p }}
